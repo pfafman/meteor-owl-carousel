@@ -6,6 +6,8 @@ This is a packaging of [owl-carousel](https://github.com/OwlFonk/OwlCarousel) fo
 
 See the [owl-carousel site for info](http://owlgraphic.com/owlcarousel/).
 
+Probably should be re-written as a pure Meteor package that makes use of what Meteor has to offer instead of hacking the owl-carousel package to work with Meteor.
+
 ## Installation
 
 * Pre-Install [Meteorite](https://github.com/oortcloud/meteorite) to use [Atmosphere](https://atmosphere.meteor.com)
