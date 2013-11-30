@@ -2,7 +2,7 @@ Meteor Owl Carousel
 ===================
 
 ### Intro
-This is a packaging of [owl-carousel](https://github.com/OwlFonk/OwlCarousel) for [Meteor](http://http://www.meteor.com).  
+This is a packaging of [owl-carousel](https://github.com/OwlFonk/OwlCarousel) for [Meteor](http://http://www.meteor.com) with some modifications.  
 
 See the [owl-carousel site for info](http://owlgraphic.com/owlcarousel/).
 
@@ -32,3 +32,18 @@ and then run meteorite to install.
 	mrt add owl-carousel
 ```
 
+### Modifications
+
+Added a callback for getting the image src on lazyload
+
+	lazyLoadCallback: (img) ->
+        ...
+
+Modified the afterLazyLoad callback to pass the elm as a second argument
+
+
+
+	afterLazyLoad: (base, elm) ->
+		...
+	
+You can then use these to pull the image src from the database via meteor and use the afterLazyLoad to make some changes to image visibility.	
